@@ -1,0 +1,49 @@
+{% comment %}
+/**
+ * This liquid file represents the "Our Story" section of a custom product page.
+ * It includes the necessary HTML and liquid code to display the section's content.
+ * The section allows the user to select a page type and customize the title and content accordingly.
+ *
+ * Liquid Tags:
+ * - {{ 'section-custom-page.css' | asset_url | stylesheet_tag }}: Imports the CSS file for this section.
+ * - {{ section.settings['page-type'].title }}: Displays the title of the selected page type.
+ * - {{ section.settings['page-type'].content }}: Displays the content of the selected page type.
+ *
+ * Liquid Schema:
+ * - name: "Our Story"
+ * - settings:
+ *   - type: "page"
+ *     id: "page-type"
+ *     label: "Select Page Type"
+ * - presets:
+ *   - name: "Our Story"
+ */
+{% endcomment %}
+{{ 'section-custom-page.css' | asset_url | stylesheet_tag }}
+<div class="our-story-section">
+    <div class="section-title">
+        <h2 class="section-{{ section.id }}--textcolor" tabindex="0">
+            {{ section.settings['page-type'].title }}
+        </h2>
+    </div>
+    <div class="section-details">
+        {{ section.settings['page-type'].content }}
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Our Story",
+    "settings": [
+        {
+            "type": "page",
+            "id": "page-type",
+            "label": "Select Page Type"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Our Story"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,16 @@
+.our-story-section {
+    margin-top: 10rem;
+    text-align: center;
+    border: 2px solid #000;
+    border-left: none;
+    border-right: none;
+  }
+  .section-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: normal;
+  }
+  .section-details {
+    margin-bottom: 2rem;
+  }
