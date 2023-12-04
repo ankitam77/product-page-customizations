@@ -1,0 +1,56 @@
+{% comment %}
+  Renders the product specifications details.
+  
+  This snippet is responsible for displaying the product specifications details on the product page.
+  It retrieves the specifications data from the custom metafields of the product and renders them in HTML format.
+  The specifications include information such as sleeves, neck, length, pattern, type, and occasion.
+  
+  @param {Object} block.settings.specifications_title - The title of the specifications section.
+  @param {Array} product.metafields.custom.product_specifications.value - The array of product specifications.
+  @param {String} item.sleeve_length - The length of the sleeves.
+  @param {String} item.neck - The type of the neck.
+  @param {String} item.length - The length of the product.
+  @param {String} item.pattern - The pattern of the product.
+  @param {String} item.type - The type of the product.
+  @param {String} item.occasion - The occasion for which the product is suitable.
+{% endcomment %}
+
+<div class="specification-title">
+  <h2>{{ block.settings.specifications_title }}</h2>
+</div>
+<div
+  id="product-metafields-container"
+  class="product-metafields"
+>
+  {% for item in product.metafields.custom.product_specifications.value %}
+    <div class="product-metafields-values">
+      <h4 class="">Sleeves</h4>
+      <p class="">{{ item.sleeve_length }}</p>
+    </div>
+
+    <div class="product-metafields-values">
+      <h4 class="">Neck</h4>
+      <p class="">{{ item.neck }}</p>
+    </div>
+
+    <div class="product-metafields-values">
+      <h4 class="">Length</h4>
+      <p class="">{{ item.length }}</p>
+    </div>
+
+    <div class="product-metafields-values">
+      <h4 class="">Pattern</h4>
+      <p class="">{{ item.pattern }}</p>
+    </div>
+
+    <div class="product-metafields-values">
+      <h4 class="">Type</h4>
+      <p class="">{{ item.type }}</p>
+    </div>
+
+    <div class="product-metafields-values">
+      <h4 class="">Occasion</h4>
+      <p class="">{{ item.occasion }}</p>
+    </div>
+  {% endfor %}
+</div>
