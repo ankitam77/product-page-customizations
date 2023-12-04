@@ -81,13 +81,13 @@ To create definations, please go through below steps.
   * It will show the progress and also will generate report of importing data if successful or failed.
   * We have to be very pretty sure about the the file which we are importing, specifically for metafields and metaobjects. If any defination fails to match it will not   import the data.
 
-4. YOu can check the metafields and metaobjects data which is added with products is displayed on product page under specifications.
+4. You can check the metafields and metaobjects data which is added with products is displayed on storefront product page under specifications.
 5. 'Our Story' section is custom section which is displaying a page. We can change with any other page.
 
 
 ## Additional Information
 
-We are not updating anything to cart functionlaity as all major functions are coming with theme itself. Below are those functions which are already there with latest theme:
+We are not updating anything to cart functionality as all major functions are coming with theme itself. Below are those functions which are already there with latest theme:
 
 1. Product is added to cart as soon as we click 'Add to cart' without refreshing page.
 2. Increase or decrease the quantity of the items directly from the cart.
