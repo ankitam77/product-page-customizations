@@ -33,10 +33,13 @@ Before importing data to store, we need to create definations for metaobjects an
 
 To create definations, please go through below steps.
 
-1. **Create defination for metaobjects:**
+ 1. **Create defination for metaobjects:**
+
 
    * In Shopify Admin, go to Settings-> Custom Data -> Metaobjects. Click on **Add Defination**.
+     
     <img width="772" alt="image" src="https://github.com/ankitam77/product-page-customizations/assets/94292839/4f9fc398-5b98-47f8-a614-d51dd0707273">
+
 
    * Add "Product Specifications" in Name input field.
    * Click on Add Field. Select Single Line Text. Add Name "Heading". Check the checkbox of 'Display Name'. Keep selected One Value. Click on Add. This is only for purpose to make sure what value is going to use for what data. This will not get displayed on storefront.
@@ -48,16 +51,24 @@ To create definations, please go through below steps.
    * Click on Add Field. Select Single Line Text. Add Name "Occasion". Keep selected One Value. Click on Add.
    * Save the metaobject defination.
 
-2. **Add a Metafield reference**
+
+2.  **Add a Metafield reference**
+
+
   To enable the dynamic content we need to add a metafield reference.
+
 
   * In Shopify Admin, go to Settings-> Custom Data -> Metafields -> Products. Click on **Add Defination**.
   * Add product metafield name "Product Specifications" in Name input field.
-  * Select type -> Metaobjects -> Select referenece by seecting metaobjects. 
+  * Select type -> Metaobjects -> Select referenece by seecting metaobjects.
+    
     <img width="484" alt="image" src="https://github.com/ankitam77/product-page-customizations/assets/94292839/c0f5b0b7-1e39-4f5d-859a-bb0baf8434db">
+    
   * Select List Of Entries and Save.
 
+
 3. **Import store sample data**
+   
   * Go to Apps -> Metrixify App.
   * Under Import Options 'Add File'. File is available in root folder with name 'custom-data.xls'.
   * Once added and ready to import, click on 'Import' button.
