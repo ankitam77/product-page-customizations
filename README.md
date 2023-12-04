@@ -78,3 +78,17 @@ To create definations, please go through below steps.
 4. YOu can check the metafields and metaobjects data which is added with products is displayed on product page under specifications.
 5. 'Our Story' section is custom section which is displaying a page. We can change with any other page.
 
+
+## Additional Information
+
+We are not updating anything to cart functionlaity as all major functions are coming with theme itself. Below are those functions which are already there with latest theme:
+
+1. Product is added to cart as soon as we click 'Add to cart' without refreshing page.
+2. Increase or decrease the quantity of the items directly from the cart.
+3. Remove items from the cart.
+4. It prevents multiple submissions too.
+
+We are always ready to take new challange. So if anything which is new and useful for cart functionality, we would be working on it. Please share you ideas for the same.
+
+
+
