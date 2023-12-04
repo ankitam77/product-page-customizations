@@ -6,6 +6,8 @@ This project is for mainly focusing on Shopify Online 2.0 and 3.0 features. Onli
  * Theme Editor Enhancements
  * Development Tools (mainly CLI)
  * Github Integration with shopify store
+
+
 Recently, Shopify has also introduced Online store 3.0. Some of the feature are introduced including
  * Workflow changes
  * Metaobjects
