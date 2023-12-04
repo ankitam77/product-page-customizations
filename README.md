@@ -90,5 +90,8 @@ We are not updating anything to cart functionlaity as all major functions are co
 
 We are always ready to take new challange. So if anything which is new and useful for cart functionality, we would be working on it. Please share you ideas for the same.
 
+## Upcoming Updates
+
+We will be updating this repository with tailwind css which will improve more code quality. To increase the performance, we are planning to update this repository with gulp file to minify css and js. We will be working soon on this changes.
 
 
