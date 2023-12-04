@@ -11,7 +11,11 @@ This project is for mainly focusing on Shopify Online 2.0 and 3.0 features. Onli
 Recently, Shopify has also introduced Online store 3.0. Some of the feature are introduced including
  * Workflow changes
  * Metaobjects
-We are trying to customize the product page with the above mentioned changes where we have created metaobjects to display structured data for product page. Metaobjects use **metafields** to store their fields. We have focused on creating custom section which can be used on any type of pages.
+
+
+We are trying to customize the product page with the above mentioned changes where we have created metaobjects to display structured data for product page. Metaobjects use 
+
+**metafields** to store their fields. We have focused on creating custom section which can be used on any type of pages.
 
 # Installation
 
