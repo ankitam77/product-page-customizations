@@ -82,9 +82,16 @@
         "padding_top": 36,
         "padding_bottom": 12
       }
+    },
+    "d09e0c65-ef9d-477f-a687-ead442beee40": {
+      "type": "our-story",
+      "settings": {
+        "page-type": "our-story"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "d09e0c65-ef9d-477f-a687-ead442beee40"
   ]
 }
