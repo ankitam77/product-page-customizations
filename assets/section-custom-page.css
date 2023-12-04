@@ -1,16 +1,37 @@
+/* up and down arrow style */
+.section-title {
+  position: relative;
+  border-bottom: 2px solid #fff;
+}
 .our-story-section {
     margin-top: 10rem;
     text-align: center;
     border: 2px solid #000;
     border-left: none;
     border-right: none;
+    background-color: #403f3e;
+    color: #fff;
   }
   .section-title h2 {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: normal;
+    color: #fff;
   }
   .section-details {
     margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .add-pb{
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 767px) {
+    .section-title:after {
+        right: 20%;
+    }
+    .add-pb{
+        padding-bottom: 75px;
+      }
   }
