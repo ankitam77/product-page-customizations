@@ -38,6 +38,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "245407f2-9568-4fae-b151-151ebfbe4184": {
+          "type": "specifications",
+          "settings": {
+            "specifications_title": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -57,6 +63,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "245407f2-9568-4fae-b151-151ebfbe4184",
         "description",
         "share"
       ],
