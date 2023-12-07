@@ -83,6 +83,7 @@ To create definations, please go through below steps.
 
 4. You can check the metafields and metaobjects data which is added with products is displayed on storefront product page under specifications.
 5. 'Our Story' section is custom section which is displaying a page. We can change with any other page.
+6. 'Heading With Animation' section is newly created custom section which is useful to display some specific information about your store, products, collections etc in animation format. There are 3 types of animations created. We can show any of the three animations on any page with just few settings which is available there. We can add more animations to the list as per our need with some more config values in adding schema. As of now, we have shown this section on product page with marquee animation, on homepage with hover animation and on collection page with bounce animation.
 
 
 ## Additional Information
