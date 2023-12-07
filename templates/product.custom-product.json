@@ -83,6 +83,32 @@
         "padding_bottom": 12
       }
     },
+    "227227cd-21d7-431f-baf3-136e71c91a48": {
+      "type": "heading-with-animation",
+      "settings": {
+        "background_color": "#cfe6b4",
+        "text_color": "#000",
+        "enable_animation": true,
+        "text_align": "right",
+        "animated_type": "marquee_animation",
+        "animation_text": "Winter is not a season, it's 'CELEBRATION'.!",
+        "animation_speed": "5s",
+        "animation_delay": "0s",
+        "animation_direction": "normal",
+        "animation_iteration": "infinite",
+        "animation_timing_function": "linear",
+        "animation_hover_speed": "1s",
+        "animation_hover_delay": "0s",
+        "animation_hover_direction": "alternate",
+        "animation_hover_iteration": "infinite",
+        "animation_hover_timing_function": "linear",
+        "animation_bounce_speed": "0.5s",
+        "animation_bounce_delay": "0s",
+        "animation_bounce_direction": "alternate",
+        "animation_bounce_iteration": "infinite",
+        "animation_bounce_timing_function": "linear"
+      }
+    },
     "d09e0c65-ef9d-477f-a687-ead442beee40": {
       "type": "our-story",
       "settings": {
@@ -92,6 +118,7 @@
   },
   "order": [
     "main",
+    "227227cd-21d7-431f-baf3-136e71c91a48",
     "d09e0c65-ef9d-477f-a687-ead442beee40"
   ]
 }
