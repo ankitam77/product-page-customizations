@@ -1,0 +1,218 @@
+{{ 'section-animation-heading.css' | asset_url | stylesheet_tag }}
+{% style %}
+.marquee-animation {
+    animation: marquee {{ section.settings.animation_speed }} {{ section.settings.animation_timing_function }} {{ section.settings.animation_iteration }};
+    animation-delay: {{ section.settings.animation_delay }};
+    animation-direction: {{ section.settings.animation_direction }};
+    white-space: nowrap;
+    overflow: hidden;
+}
+.animation-heading {
+    background-color: {{ section.settings.background_color }};
+    text-align: {{ section.settings.text_align }};
+}
+.animation-heading h2 {
+    color: {{ section.settings.text_color }};
+}
+
+.hover-animation {
+    animation: hover {{ section.settings.animation_hover_speed }} {{ section.settings.animation_timing_function }} {{ section.settings.animation_iteration }};
+    animation-delay: {{ section.settings.animation_hover_delay }};
+    animation-direction: {{ section.settings.animation_hover_direction }};
+}
+
+.bounce-animation {
+    animation: bounce {{ section.settings.animation_speed }} {{ section.settings.animation_timing_function }} {{ section.settings.animation_iteration }};
+    animation-delay: {{ section.settings.animation_delay }};
+    animation-direction: {{ section.settings.animation_direction }};
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes hover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+{% endstyle %}
+<div class="animation-heading">
+    {% if section.settings.enable_animation %}
+        <h2 class="animated {% if section.settings.animated_type == "marquee_animation" %} marquee-animation {% elsif section.settings.animated_type == "hover_animation"  %} hover-animation {% elsif section.settings.animated_type == "bounce_animation"  %} bounce-animation {% endif %} ">{{ section.settings.animation_text }}</h2>
+    {% else %}
+        <h2>{{ section.settings.animation_text }}</h2>
+    {% endif %}
+</div>
+{% schema %}
+{
+  "name": "Heading With Animation",
+  "settings": [
+    {
+        "type":"color",
+        "id":"background_color",
+        "label": "Background Color",
+        "default": "#fff"
+    },
+    {
+        "type":"color",
+        "id":"text_color",
+        "label": "text Color",
+        "default": "#000"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_animation",
+      "label": "Do you want to have animation activated?"
+    },
+    {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text Align",
+        "options": [
+            {
+                "value": "left",
+                "label": "Left"
+            },
+            {
+                "value": "center",
+                "label": "Center"
+            },
+            {
+                "value": "right",
+                "label": "Right"
+            }
+        ],
+        "default": "right"
+      },
+    {
+      "type": "select",
+      "id": "animated_type",
+      "label": "Select Animation Type",
+      "options": [
+        {
+          "value": "marquee_animation",
+          "label": "Marquee Animation"
+        },
+        {
+          "value": "hover_animation",
+          "label": "Hover Animation"
+        },
+        {
+          "value": "bounce_animation",
+          "label": "Bounce Animation"
+        }
+      ],
+      "default": "marquee_animation"
+    },
+    {
+      "type": "text",
+      "id": "animation_text",
+      "label": "Enter Animation Text",
+      "default": "Hello World"
+    },
+    {
+      "type": "text",
+      "id": "animation_speed",
+      "label": "Enter Animation Speed",
+      "default": "5s"
+    },
+    {
+      "type": "text",
+      "id": "animation_delay",
+      "label": "Enter Animation Delay",
+      "default": "0s"
+    },
+    {
+      "type": "text",
+      "id": "animation_direction",
+      "label": "Enter Animation Direction",
+      "default": "normal",
+      "placeholder": "Assign any direction from normal, reverse, alternate, alternate-reverse"
+    },
+    {
+      "type": "text",
+      "id": "animation_iteration",
+      "label": "Enter Animation Iteration",
+      "default": "infinite"
+    },
+    {
+      "type": "text",
+      "id": "animation_timing_function",
+      "label": "Enter Animation Timing Function",
+      "default": "linear"
+    },
+    {
+      "type": "text",
+      "id": "animation_hover_speed",
+      "label": "Enter Animation Hover Speed",
+      "default": "0.5s"
+    },
+    {
+      "type": "text",
+      "id": "animation_hover_delay",
+      "label": "Enter Animation Hover Delay",
+      "default": "0s"
+    },
+    {
+      "type": "text",
+      "id": "animation_hover_direction",
+      "label": "Enter Animation Hover Direction",
+      "default": "alternate"
+    },
+    {
+      "type": "text",
+      "id": "animation_hover_iteration",
+      "label": "Enter Animation Hover Iteration",
+      "default": "infinite"
+    },
+    {
+      "type": "text",
+      "id": "animation_hover_timing_function",
+      "label": "Enter Animation Hover Timing Function",
+      "default": "linear"
+    },
+    {
+      "type": "text",
+      "id": "animation_bounce_speed",
+      "label": "Enter Animation Bounce Speed",
+      "default": "0.5s"
+    },
+    {
+      "type": "text",
+      "id": "animation_bounce_delay",
+      "label": "Enter Animation Bounce Delay",
+      "default": "0s"
+    },
+    {
+      "type": "text",
+      "id": "animation_bounce_direction",
+      "label": "Enter Animation Bounce Direction",
+      "default": "alternate"
+    },
+    {
+      "type": "text",
+      "id": "animation_bounce_iteration",
+      "label": "Enter Animation Bounce Iteration",
+      "default": "infinite"
+    },
+    {
+      "type": "text",
+      "id": "animation_bounce_timing_function",
+      "label": "Enter Animation Bounce Timing Function",
+      "default": "linear"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Heading With Animation"
+    }
+  ]
+}
+{% endschema %}
